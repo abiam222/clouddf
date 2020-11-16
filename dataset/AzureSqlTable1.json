@@ -1,0 +1,42 @@
+{
+	"name": "AzureSqlTable1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "outputsql",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "Car",
+				"type": "varchar"
+			},
+			{
+				"name": "car_make",
+				"type": "varchar"
+			},
+			{
+				"name": "car_model",
+				"type": "varchar"
+			},
+			{
+				"name": "model_year",
+				"type": "varchar"
+			},
+			{
+				"name": "color",
+				"type": "varchar"
+			},
+			{
+				"name": "country_available",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Cars"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
